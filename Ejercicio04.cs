@@ -11,27 +11,23 @@ public class Ejercicio04 : MonoBehaviour
       Podriamos mejorarlo usando algun método de Linq.
     */
 
-    public List<string> enemigos;
-    string enemigo;
+    public List<string> enemies;
+    string enemy;
 
     private void start()
     {
-        enemigos = new List<string>() { "Orco", "Araña", "Golem", "Goblin" };
-        enemigo = araña;
+        enemies = new List<string>() { "Orco", "Araña", "Golem", "Goblin" };
+        enemy = araña;
     }
 
 
-    string EncontrandoEnemigo()
+    string FindingEnemies()
     {
-        for (int i = 0; i < enemigos.Length; i++)
-        {
-            if (enemigos[i].Equals("Araña"))
-            {
-                return "Se Encontro Araña";
-            }
-        }
 
-        return "No se encontró";
+        if(enemies.Contains(enemy)) return "Se Encontro Araña";
+            
+
+        else return "No se encontró";
 
 
     }

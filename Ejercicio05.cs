@@ -8,24 +8,31 @@ public class Ejercicio05 : MonoBehaviour
 
     //Dato: como podriamos hacer para no usar tantos "if"?
 
-    string Acción = "Attack";
-    int Habilidad = 1;
+    string action;
+    int hability;
 
-    void EjecutarAcción()
+    void start 
     {
-        switch (Habilidad)
+        action ;
+        hability = 1;
+    }
+    void StartAction()
+    {
+        switch (hability)
         {
             case 1:
-                if(Acción == "Heal")
-                    Debug.Log("Me curé");
+                action = "Heal"; 
+                Debug.Log("Me curé");             
                 break;
+
             case 2:
-                if (Acción == "Attack")
-                    Debug.Log("Hago daño");
+                action = "Attack";
+                Debug.Log("Hago daño");
                 break;
+
             case 3:
-                if (Acción == "Special Attack")
-                    Debug.Log("Empiezo a girar como trompo");
+                action = "Special Attack";
+                Debug.Log("Empiezo a girar como trompo");
                 break;
          
         }
